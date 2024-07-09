@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>demo</title>
+  <script src="./index.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+
+<body>
+  <h1>D E M O</h1>
+  <img src="./1.jpg" alt="">
+  <script>
+    $.ajax({
+      type: 'get',
+      url: '/api1/todos',
+      success: function (res) {
+        console.log(res)
+      }
+    })
+
+
+    $.ajax({
+      type: 'post',
+      url: '/api2/users',
+      data: JSON.stringify({
+        name: 'AKAK',
+        age: 19
+      }),
+      contentType: 'application/json',
+      success: function (res) {
+        console.log(res)
+      }
+    })
+
+  </script>
+</body>
+
+</html>

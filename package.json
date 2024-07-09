@@ -1,0 +1,22 @@
+{
+  "name": "koa-simple-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node koaServer.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "http-proxy-middleware": "^3.0.0",
+    "koa": "^2.15.3",
+    "koa-compose": "^4.1.0",
+    "koa-compress": "^5.1.1",
+    "koa-static": "^5.0.0",
+    "koa2-connect": "^1.0.2"
+  },
+  "devDependencies": {
+    "chalk": "^5.3.0"
+  }
+}
